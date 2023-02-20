@@ -1,0 +1,42 @@
+.productsList{
+    padding: 0;
+}
+
+.product{
+    display: flex;
+    position: relative;
+    width: fit-content;
+    border-bottom: 1px solid #c0c0c0;
+    box-sizing: border-box;
+    cursor: grabbing;
+    height: 50px;
+}
+
+.productTitle{
+    margin: auto;
+}
+
+.productInformation{
+    position: absolute;
+    left: 100%;
+    width: fit-content;
+    height: 500px;
+    display: none;
+    background-color: #c0c0c0;
+    z-index: 1;
+    border: 1px solid #c0c0c0;
+    padding: 3px;
+    box-sizing: border-box;
+}
+
+.productInformation img{
+    max-height: 200px;
+}
+
+.product:hover .productInformation{
+    display: block;
+}
+
+.product:hover{
+    background-color: #c0c0c0;
+}
